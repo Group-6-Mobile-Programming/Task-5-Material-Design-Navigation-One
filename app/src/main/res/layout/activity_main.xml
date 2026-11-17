@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Top app bar + flag stripe. Both scroll away when the list scrolls down. -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            style="@style/Widget.Material3.AppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:elevation="0dp"
+            app:liftOnScroll="false">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:menu="@menu/top_app_bar_menu"
+                app:navigationContentDescription="@string/open_drawer"
+                app:navigationIcon="@drawable/ic_menu"
+                app:navigationIconTint="?attr/colorOnPrimary"
+                app:title="@string/title_home"
+                app:titleTextAppearance="@style/UC.Text.ToolbarTitle"
+                app:titleTextColor="?attr/colorOnPrimary"/>
+
+            <include
+                layout="@layout/view_flag_stripe"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                app:layout_scrollFlags="scroll|enterAlways"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- Pages (fragments) are shown here -->
+        <FrameLayout
+            android:id="@+id/navHostContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <!-- Bottom app bar with a cutout for the FAB -->
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            style="@style/Widget.Material3.BottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/uc_surface"
+            app:contentInsetStart="0dp"
+            app:contentInsetEnd="0dp"
+            app:fabAlignmentMode="center"
+            app:fabAnchorMode="cradle"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="32dp"
+            app:fabCradleVerticalOffset="4dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNav"
+                style="@style/Widget.Material3.BottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:elevation="0dp"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_nav_menu"/>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/action_new_application"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="?attr/colorTertiary"
+            app:layout_anchor="@id/bottomAppBar"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.UC.Circle"
+            app:tint="?attr/colorOnTertiary"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="296dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:itemHorizontalPadding="24dp"
+        app:itemIconPadding="20dp"
+        app:menu="@menu/drawer_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>

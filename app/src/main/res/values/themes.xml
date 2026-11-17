@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base theme. Values here are the Home (Uganda brand) colours. -->
+    <style name="Theme.UgandaConnect" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Top bar -->
+        <item name="colorPrimary">@color/uc_black</item>
+        <item name="colorOnPrimary">@color/uc_white</item>
+        <!-- FAB -->
+        <item name="colorTertiary">@color/uc_red</item>
+        <item name="colorOnTertiary">@color/uc_white</item>
+        <!-- Selected pill in bottom bar, rail and drawer -->
+        <item name="colorSecondaryContainer">@color/uc_pill_home</item>
+        <item name="colorOnSecondaryContainer">@color/uc_black</item>
+        <!-- Notification badge -->
+        <item name="ucBadgeColor">@color/uc_yellow</item>
+        <item name="ucOnBadgeColor">@color/uc_black</item>
+
+        <item name="colorSurface">@color/uc_surface</item>
+        <item name="android:windowBackground">@color/uc_background</item>
+        <item name="android:statusBarColor">@color/uc_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/uc_white</item>
+    </style>
+
+    <!-- Dynamic colour system: one theme per service -->
+    <style name="Theme.UC.Home" parent="Theme.UgandaConnect"/>
+
+    <style name="Theme.UC.Energy" parent="Theme.UgandaConnect">
+        <item name="colorPrimary">@color/uc_energy</item>
+        <item name="colorOnPrimary">@color/uc_white</item>
+        <item name="colorTertiary">@color/uc_energy</item>
+        <item name="colorOnTertiary">@color/uc_white</item>
+        <item name="colorSecondaryContainer">@color/uc_pill_energy</item>
+        <item name="colorOnSecondaryContainer">@color/uc_on_pill_energy</item>
+        <item name="android:statusBarColor">@color/uc_energy</item>
+    </style>
+
+    <style name="Theme.UC.Health" parent="Theme.UgandaConnect">
+        <item name="colorPrimary">@color/uc_health</item>
+        <item name="colorOnPrimary">@color/uc_white</item>
+        <item name="colorTertiary">@color/uc_health</item>
+        <item name="colorOnTertiary">@color/uc_white</item>
+        <item name="colorSecondaryContainer">@color/uc_pill_health</item>
+        <item name="colorOnSecondaryContainer">@color/uc_on_pill_health</item>
+        <item name="android:statusBarColor">@color/uc_health</item>
+    </style>
+
+    <style name="Theme.UC.Education" parent="Theme.UgandaConnect">
+        <item name="colorPrimary">@color/uc_education</item>
+        <item name="colorOnPrimary">@color/uc_black</item>
+        <item name="colorTertiary">@color/uc_black</item>
+        <item name="colorOnTertiary">@color/uc_yellow</item>
+        <item name="colorSecondaryContainer">@color/uc_pill_education</item>
+        <item name="colorOnSecondaryContainer">@color/uc_on_pill_education</item>
+        <item name="ucBadgeColor">@color/uc_black</item>
+        <item name="ucOnBadgeColor">@color/uc_yellow</item>
+        <item name="android:statusBarColor">@color/uc_education</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Text styles -->
+    <style name="UC.Text.Section" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/uc_text_label</item>
+    </style>
+    <style name="UC.Text.CardTitle" parent="">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/uc_text</item>
+    </style>
+    <style name="UC.Text.CardBody" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/uc_text_secondary</item>
+    </style>
+    <style name="UC.Text.ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Round FAB on phones -->
+    <style name="ShapeAppearanceOverlay.UC.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

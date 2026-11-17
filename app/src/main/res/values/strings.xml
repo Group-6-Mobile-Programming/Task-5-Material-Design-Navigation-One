@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UgandaConnect</string>
+    <string name="app_subtitle">NITA-Uganda</string>
+
+    <!-- Screen titles -->
+    <string name="title_home">Home</string>
+    <string name="title_solar_subsidies">Solar Subsidies</string>
+    <string name="title_healthcare">Healthcare</string>
+    <string name="title_my_results">My Results</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_services">Services</string>
+    <string name="nav_bookmarks">Bookmarks</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_renewable_energy">Renewable Energy</string>
+    <string name="nav_healthcare">Healthcare</string>
+    <string name="nav_education">Education</string>
+    <string name="nav_public_agencies">Public Agencies</string>
+
+    <!-- Actions / accessibility -->
+    <string name="action_search">Search</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_new_application">Start new application</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="navigate_back">Back</string>
+    <string name="clear_search">Clear search</string>
+    <string name="search_hint">Search services</string>
+    <string name="chevron_description">Open</string>
+    <string name="badge_sample">3</string>
+
+    <!-- Home -->
+    <string name="label_services">SERVICES</string>
+    <string name="card_energy_title">Renewable Energy</string>
+    <string name="card_energy_desc">Solar subsidies from REA</string>
+    <string name="card_health_title">Healthcare</string>
+    <string name="card_health_desc">Book visits, lab results</string>
+    <string name="card_education_title">Education</string>
+    <string name="card_education_desc">UNEB results, term dates</string>
+    <string name="card_agencies_title">Public Agencies</string>
+    <string name="card_agencies_desc">UMEME, NWSC, KCCA</string>
+
+    <!-- Solar subsidies -->
+    <string name="solar_title">Solar panel subsidy</string>
+    <string name="solar_desc">Apply for a solar panel subsidy from the Rural Electrification Agency (REA).</string>
+
+    <!-- Results -->
+    <string name="exam_uce">UCE</string>
+    <string name="exam_uace">UACE</string>
+    <string name="exam_uce_full">UGANDA CERTIFICATE OF EDUCATION</string>
+    <string name="sample_candidate">Sample Candidate</string>
+    <string name="sample_index">Index no. U0000/000</string>
+    <string name="label_subjects">SUBJECTS</string>
+
+    <!-- Search -->
+    <string name="label_hospitals">HOSPITALS</string>
+</resources>

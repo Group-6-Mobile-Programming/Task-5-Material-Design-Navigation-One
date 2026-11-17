@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bell with unread badge, used as the action layout in top_app_bar_menu -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notificationsAction"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:clickable="true"
+    android:contentDescription="@string/action_notifications"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/ivBell"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_bell"
+        app:tint="?attr/colorOnPrimary"/>
+
+    <TextView
+        android:id="@+id/tvBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/bg_badge"
+        android:gravity="center"
+        android:minWidth="18dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/badge_sample"
+        android:textColor="?attr/ucOnBadgeColor"
+        android:textSize="11sp"
+        android:textStyle="bold"/>
+</FrameLayout>
