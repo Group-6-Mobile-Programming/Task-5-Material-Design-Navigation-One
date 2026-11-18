@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uganda flag stripe: black, yellow, red, black, yellow, red -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flagStripe"
+    android:layout_width="match_parent"
+    android:layout_height="6dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#000000"/>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@color/uc_yellow"/>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@color/uc_red"/>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#000000"/>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@color/uc_yellow"/>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@color/uc_red"/>
+</LinearLayout>

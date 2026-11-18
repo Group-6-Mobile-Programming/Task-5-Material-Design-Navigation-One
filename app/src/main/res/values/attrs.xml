@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notification badge colours, set per service theme -->
+    <attr name="ucBadgeColor" format="color"/>
+    <attr name="ucOnBadgeColor" format="color"/>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tablet / large screen (600dp and wider): navigation rail replaces the bottom bar -->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.google.android.material.navigationrail.NavigationRailView
+            android:id="@+id/navRail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/uc_surface"
+            app:headerLayout="@layout/rail_fab_header"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/nav_rail_menu"
+            app:menuGravity="top"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/uc_stroke"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                style="@style/Widget.Material3.AppBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                app:elevation="0dp"
+                app:liftOnScroll="false">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:menu="@menu/top_app_bar_menu"
+                    app:navigationContentDescription="@string/open_drawer"
+                    app:navigationIcon="@drawable/ic_menu"
+                    app:navigationIconTint="?attr/colorOnPrimary"
+                    app:title="@string/title_home"
+                    app:titleTextAppearance="@style/UC.Text.ToolbarTitle"
+                    app:titleTextColor="?attr/colorOnPrimary"/>
+
+                <include
+                    layout="@layout/view_flag_stripe"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    app:layout_scrollFlags="scroll|enterAlways"/>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/navHostContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="296dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:itemHorizontalPadding="24dp"
+        app:itemIconPadding="20dp"
+        app:menu="@menu/drawer_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>

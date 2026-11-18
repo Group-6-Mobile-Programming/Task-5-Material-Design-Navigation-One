@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Uganda brand -->
+    <color name="uc_black">#111111</color>
+    <color name="uc_yellow">#FCDC04</color>
+    <color name="uc_red">#D90000</color>
+    <color name="uc_white">#FFFFFF</color>
+
+    <!-- Service colours (dynamic colour system page) -->
+    <color name="uc_energy">#1B6B3A</color>
+    <color name="uc_health">#145DA0</color>
+    <color name="uc_education">#FCDC04</color>
+    <color name="uc_agencies">#B3131B</color>
+
+    <!-- Selected-item pill per service -->
+    <color name="uc_pill_home">#FFE980</color>
+    <color name="uc_pill_energy">#DCEFE1</color>
+    <color name="uc_pill_health">#DCE9F7</color>
+    <color name="uc_pill_education">#FFF1A6</color>
+    <color name="uc_on_pill_energy">#0F3F22</color>
+    <color name="uc_on_pill_health">#0B3558</color>
+    <color name="uc_on_pill_education">#3A3000</color>
+
+    <!-- Surfaces and text -->
+    <color name="uc_background">#F4F2ED</color>
+    <color name="uc_surface">#FFFFFF</color>
+    <color name="uc_stroke">#E4E0D6</color>
+    <color name="uc_text">#141414</color>
+    <color name="uc_text_secondary">#4A4A45</color>
+    <color name="uc_text_label">#4D4B44</color>
+    <color name="uc_segment_container">#E8E4D6</color>
+    <color name="uc_chip_light">#FFF0A3</color>
+    <color name="uc_chip_light_text">#3A3000</color>
+    <color name="uc_header_subtitle">#D6D6D6</color>
+</resources>
