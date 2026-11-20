@@ -1,0 +1,5 @@
+index_no,result_id,agency,meter_no,amount,district,facility_id,slot_id,tier_id,ward,issue_cat,issue_desc
+U0012/501,RES-2025-001,UMEME,04123456789,25000,Kampala,FAC-MULAGO-01,SLOT-101,TIER-SOLAR-A,Central,Streetlight,Broken streetlight near junction
+U0012/502,RES-2025-002,NWSC,NWSC-884120,42000,Wakiso,FAC-ENTEBBE-02,SLOT-204,TIER-SOLAR-B,Nabweru,Drainage,Blocked roadside drainage channel
+U0012/503,RES-2025-003,UMEME,04123456790,15000,Mukono,FAC-MUKONO-03,SLOT-309,TIER-SOLAR-A,Goma,Pothole,Deep pothole affecting commuter lane
+U0012/504,RES-2025-004,NWSC,NWSC-884121,30000,Jinja,FAC-JINJA-04,SLOT-412,TIER-SOLAR-C,Walukuba,Waste,Uncollected refuse pile near market
